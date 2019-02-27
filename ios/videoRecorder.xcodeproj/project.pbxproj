@@ -41,6 +41,8 @@
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		2FA180911FA74182BF1AF21A /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 810D285FFCD04A35A3D62960 /* libRNCamera.a */; };
 		35FF1D45B01D487AA6801099 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C22DA99AD5048009E13392F /* libRCTVideo.a */; };
+		FE594E43DC3D4BFDA90761F2 /* libRNWebGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A4C5BBE06848AAA3337914 /* libRNWebGL.a */; };
+		0B0327B323F141C5838AA130 /* libRNGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EA4CFD309F479FB3179F9D /* libRNGL.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -352,6 +354,10 @@
 		810D285FFCD04A35A3D62960 /* libRNCamera.a */ = {isa = PBXFileReference; name = "libRNCamera.a"; path = "libRNCamera.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		5020519C6261408084614791 /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; name = "RCTVideo.xcodeproj"; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		4C22DA99AD5048009E13392F /* libRCTVideo.a */ = {isa = PBXFileReference; name = "libRCTVideo.a"; path = "libRCTVideo.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		0CD4B1D47A644C839B4546C1 /* RNWebGL.xcodeproj */ = {isa = PBXFileReference; name = "RNWebGL.xcodeproj"; path = "../node_modules/react-native-webgl/ios/RNWebGL.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		25A4C5BBE06848AAA3337914 /* libRNWebGL.a */ = {isa = PBXFileReference; name = "libRNWebGL.a"; path = "libRNWebGL.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		5684868EC47641009D0FAAEE /* RNGL.xcodeproj */ = {isa = PBXFileReference; name = "RNGL.xcodeproj"; path = "../node_modules/gl-react-native/ios/RNGL.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		74EA4CFD309F479FB3179F9D /* libRNGL.a */ = {isa = PBXFileReference; name = "libRNGL.a"; path = "libRNGL.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +388,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				2FA180911FA74182BF1AF21A /* libRNCamera.a in Frameworks */,
 				35FF1D45B01D487AA6801099 /* libRCTVideo.a in Frameworks */,
+				FE594E43DC3D4BFDA90761F2 /* libRNWebGL.a in Frameworks */,
+				0B0327B323F141C5838AA130 /* libRNGL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +581,8 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				773862F734DA425FAB3E9DAE /* RNCamera.xcodeproj */,
 				5020519C6261408084614791 /* RCTVideo.xcodeproj */,
+				0CD4B1D47A644C839B4546C1 /* RNWebGL.xcodeproj */,
+				5684868EC47641009D0FAAEE /* RNGL.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1202,11 +1212,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Debug;
@@ -1230,11 +1244,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Release;
@@ -1259,6 +1277,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Debug;
@@ -1282,6 +1302,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Release;
@@ -1313,11 +1335,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Debug;
@@ -1349,11 +1375,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Release;
@@ -1384,11 +1414,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Debug;
@@ -1419,11 +1453,15 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-video/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-webgl/**",
+					"$(SRCROOT)/../node_modules/gl-react-native/ios",
 				);
 			};
 			name = Release;

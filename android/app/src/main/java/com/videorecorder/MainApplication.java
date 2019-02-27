@@ -3,6 +3,8 @@ package com.videorecorder;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import fr.greweb.rnwebgl.RNWebGLPackage;
+// import com.projectseptember.RNGL.RNGLPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import org.reactnative.camera.RNCameraPackage;
 import com.facebook.react.ReactNativeHost;
@@ -25,6 +27,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNWebGLPackage(),
+            // new RNGLPackage(),
             new ReactVideoPackage(),
             new RNCameraPackage()
       );
